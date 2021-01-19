@@ -1,0 +1,198 @@
+C:\Users\Najib\PycharmProjects\AIND-Isolation\venv\Scripts\python.exe C:/Users/Najib/PycharmProjects/AIND-Isolation/tournament.py
+
+I uses 2 different functions that maximises player's move with the intuition that player with higher available move have higher chances of winning.
+
+
+*************************
+ Evaluating: ID_Improved 
+*************************
+
+Playing Matches:
+----------
+  Match 1: ID_Improved vs   Random    	Result: 33 to 7
+  Match 2: ID_Improved vs   MM_Null   	Result: 31 to 9
+  Match 3: ID_Improved vs   MM_Open   	Result: 18 to 22
+  Match 4: ID_Improved vs MM_Improved 	Result: 22 to 18
+  Match 5: ID_Improved vs   AB_Null   	Result: 28 to 12
+C:/Users/Najib/PycharmProjects/AIND-Isolation/tournament.py:100: UserWarning: One or more agents lost a match this round due to timeout. The get_move() function must return before time_left() reaches 0 ms. You will need to leave some time for the function to return, and may need to increase this margin to avoid timeouts during  tournament play.
+  warnings.warn(TIMEOUT_WARNING)
+  Match 6: ID_Improved vs   AB_Open   	Result: 25 to 15
+  Match 7: ID_Improved vs AB_Improved 	Result: 25 to 15
+
+
+Results:
+----------
+ID_Improved         65.00%
+
+*************************
+  Evaluating: Student1   
+*************************
+
+Playing Matches:
+----------
+  Match 1:  Student1   vs   Random    	Result: 40 to 0
+  Match 2:  Student1   vs   MM_Null   	Result: 33 to 7
+  Match 3:  Student1   vs   MM_Open   	Result: 27 to 13
+  Match 4:  Student1   vs MM_Improved 	Result: 25 to 15
+  Match 5:  Student1   vs   AB_Null   	Result: 29 to 11
+  Match 6:  Student1   vs   AB_Open   	Result: 24 to 16
+  Match 7:  Student1   vs AB_Improved 	Result: 30 to 10
+
+
+Results:
+----------
+Student1            74.29%
+
+*************************
+  Evaluating: Student2   
+*************************
+
+Playing Matches:
+----------
+  Match 1:  Student2   vs   Random    	Result: 36 to 4
+  Match 2:  Student2   vs   MM_Null   	Result: 36 to 4
+  Match 3:  Student2   vs   MM_Open   	Result: 27 to 13
+  Match 4:  Student2   vs MM_Improved 	Result: 24 to 16
+  Match 5:  Student2   vs   AB_Null   	Result: 33 to 7
+  Match 6:  Student2   vs   AB_Open   	Result: 26 to 14
+  Match 7:  Student2   vs AB_Improved 	Result: 27 to 13
+
+
+Results:
+----------
+Student2            74.64%
+
+*************************
+  Evaluating: Student3   
+*************************
+
+Playing Matches:
+----------
+  Match 1:  Student3   vs   Random    	Result: 33 to 7
+  Match 2:  Student3   vs   MM_Null   	Result: 35 to 5
+  Match 3:  Student3   vs   MM_Open   	Result: 26 to 14
+  Match 4:  Student3   vs MM_Improved 	Result: 24 to 16
+  Match 5:  Student3   vs   AB_Null   	Result: 28 to 12
+  Match 6:  Student3   vs   AB_Open   	Result: 28 to 12
+  Match 7:  Student3   vs AB_Improved 	Result: 28 to 12
+
+
+Results:
+----------
+Student3            72.14%
+
+*************************
+  Evaluating: Student4   
+*************************
+
+Playing Matches:
+----------
+  Match 1:  Student4   vs   Random    	Result: 36 to 4
+  Match 2:  Student4   vs   MM_Null   	Result: 33 to 7
+  Match 3:  Student4   vs   MM_Open   	Result: 27 to 13
+  Match 4:  Student4   vs MM_Improved 	Result: 24 to 16
+  Match 5:  Student4   vs   AB_Null   	Result: 28 to 12
+  Match 6:  Student4   vs   AB_Open   	Result: 28 to 12
+  Match 7:  Student4   vs AB_Improved 	Result: 24 to 16
+
+
+Results:
+----------
+Student4            71.43%
+
+*************************
+  Evaluating: Student5   
+*************************
+
+Playing Matches:
+----------
+  Match 1:  Student5   vs   Random    	Result: 33 to 7
+  Match 2:  Student5   vs   MM_Null   	Result: 30 to 10
+  Match 3:  Student5   vs   MM_Open   	Result: 22 to 18
+  Match 4:  Student5   vs MM_Improved 	Result: 22 to 18
+  Match 5:  Student5   vs   AB_Null   	Result: 26 to 14
+  Match 6:  Student5   vs   AB_Open   	Result: 28 to 12
+  Match 7:  Student5   vs AB_Improved 	Result: 30 to 10
+
+
+Results:
+----------
+Student5            68.21%
+
+*************************
+  Evaluating: Student6   
+*************************
+
+Playing Matches:
+----------
+  Match 1:  Student6   vs   Random    	Result: 38 to 2
+  Match 2:  Student6   vs   MM_Null   	Result: 35 to 5
+  Match 3:  Student6   vs   MM_Open   	Result: 24 to 16
+  Match 4:  Student6   vs MM_Improved 	Result: 23 to 17
+  Match 5:  Student6   vs   AB_Null   	Result: 33 to 7
+  Match 6:  Student6   vs   AB_Open   	Result: 25 to 15
+  Match 7:  Student6   vs AB_Improved 	Result: 25 to 15
+
+
+Results:
+----------
+Student6            72.50%
+
+*************************
+  Evaluating: Student7   
+*************************
+
+Playing Matches:
+----------
+  Match 1:  Student7   vs   Random    	Result: 36 to 4
+  Match 2:  Student7   vs   MM_Null   	Result: 34 to 6
+  Match 3:  Student7   vs   MM_Open   	Result: 22 to 18
+  Match 4:  Student7   vs MM_Improved 	Result: 24 to 16
+  Match 5:  Student7   vs   AB_Null   	Result: 33 to 7
+  Match 6:  Student7   vs   AB_Open   	Result: 28 to 12
+  Match 7:  Student7   vs AB_Improved 	Result: 26 to 14
+
+
+Results:
+----------
+Student7            72.50%
+
+*************************
+   Evaluating: najib1    
+*************************
+
+Playing Matches:
+----------
+  Match 1:   najib1    vs   Random    	Result: 39 to 1
+  Match 2:   najib1    vs   MM_Null   	Result: 35 to 5
+  Match 3:   najib1    vs   MM_Open   	Result: 28 to 12
+  Match 4:   najib1    vs MM_Improved 	Result: 31 to 9
+  Match 5:   najib1    vs   AB_Null   	Result: 27 to 13
+  Match 6:   najib1    vs   AB_Open   	Result: 30 to 10
+  Match 7:   najib1    vs AB_Improved 	Result: 31 to 9
+
+
+Results:
+----------
+najib1              78.93%
+
+*************************
+   Evaluating: najib2    
+*************************
+
+Playing Matches:
+----------
+  Match 1:   najib2    vs   Random    	Result: 36 to 4
+  Match 2:   najib2    vs   MM_Null   	Result: 35 to 5
+  Match 3:   najib2    vs   MM_Open   	Result: 27 to 13
+  Match 4:   najib2    vs MM_Improved 	Result: 24 to 16
+  Match 5:   najib2    vs   AB_Null   	Result: 31 to 9
+  Match 6:   najib2    vs   AB_Open   	Result: 32 to 8
+  Match 7:   najib2    vs AB_Improved 	Result: 33 to 7
+
+
+Results:
+----------
+najib2              77.86%
+
+Process finished with exit code 0
