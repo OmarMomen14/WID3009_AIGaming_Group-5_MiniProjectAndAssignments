@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,6 +17,9 @@ public class Trainer : MonoBehaviour
     [Header("Parameters")] public int populationSize = 20;
     public int startGenomeLength = 5;
     public int growthSize = 1;
+
+    [Header("Save")] public string fileName = "save.csv";
+    public bool save = true;
 
     [Header("UI (User Interface)")] public Text generationText;
     public Text genomeLengthText;
@@ -41,6 +45,8 @@ public class Trainer : MonoBehaviour
             Brain brain = CreateKartWithGenome(new Genome(m_GenomeLength));
             m_Population.Add(brain);
         }
+
+        WriteSaveHeader();
 
         InitializeBrains();
         m_Initialized = true;
@@ -109,6 +115,9 @@ public class Trainer : MonoBehaviour
 
         var genomes = GetAllGenomes();
         var newPopulation = new List<Brain>();
+
+        if (save)
+            WriteSaveData(genomes);
 
         var sumFitnesses = genomes.Sum(genome => genome.Fitness);
 
@@ -194,5 +203,35 @@ public class Trainer : MonoBehaviour
             throw new ArithmeticException("Could not apply roulette wheel selection");
 
         return genomes[index];
+    }
+
+
+    private void WriteSaveHeader()
+    {
+        using (StreamWriter file = new StreamWriter(fileName, false))
+        {
+            file.WriteLine("{0},{1}", "average fitness", "best fitness");
+        }
+    }
+
+    private void WriteSaveData(List<Genome> genomes)
+    {
+        using (StreamWriter file = new StreamWriter(fileName, true))
+        {
+            float bestFitness = 0.0f;
+
+            float averageFitness = 0.0f;
+            foreach (var genome in genomes)
+            {
+                averageFitness += genome.Fitness;
+                if (bestFitness < genome.Fitness)
+                {
+                    bestFitness = genome.Fitness;
+                }
+            }
+
+            averageFitness /= genomes.Count;
+            file.WriteLine("{0},{1}", averageFitness, bestFitness);
+        }
     }
 }
